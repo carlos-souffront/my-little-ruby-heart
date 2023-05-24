@@ -1,0 +1,51 @@
+<head>
+  <meta charset="utf-8">
+  <title>my little heart</title>
+</head>
+
+<style>
+  .corazon {
+    width: 100px;
+    height: 100px;
+    position: relative;
+  }
+
+  .left-half,
+  .right-half {
+    width: 50px;
+    height: 80px;
+    background-color: #e0115f;
+    border-radius: 50px 50px 0 0;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .shine {
+    width: 10.5px;
+    height: 27px;
+    background: linear-gradient(to top right,
+        #f1e5ac, transparent);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateX(-26px) translateY(-70px) rotate(45deg);
+    border-radius: 0 0 50% 50%;
+  }
+
+  .left-half {
+    left: 0;
+    transform: translateX(69px) rotate(-45deg);
+  }
+
+  .right-half {
+    right: 0;
+    transform: translateX(40px) rotate(45deg);
+  }
+</style>
+
+<div class="corazon">
+  <div class="left-half"></div>
+  <div class="right-half"></div>
+  <div class="shine"></div>
+</div>
